@@ -1,0 +1,300 @@
+/* Google Fonts Import */
+@import url('https://googleapis.com');
+
+/* Color Variables & Base Configurations */
+:root {
+  --bg-dark: #080b11;
+  --bg-card: rgba(17, 24, 39, 0.7);
+  --primary-glow: #00f2fe;
+  --secondary-glow: #4facfe;
+  --accent-purple: #7f00ff;
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --border-color: rgba(0, 242, 254, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-dark);
+  background-image: radial-gradient(circle at 50% 0%, rgba(127, 0, 255, 0.15) 0%, transparent 50%);
+  color: var(--text-main);
+  line-height: 1.7;
+  padding-bottom: 4rem;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  padding: 5rem 1rem 3rem 1rem;
+  background: linear-gradient(180deg, rgba(8, 11, 17, 0.6) 0%, transparent 100%);
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, var(--primary-glow), var(--secondary-glow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 15px rgba(0, 242, 254, 0.3));
+}
+
+header p {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+#clock {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: var(--primary-glow);
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+  margin-top: 1rem;
+}
+
+/* Sticky Navigation Bar */
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background: rgba(8, 11, 17, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  z-index: 100;
+}
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-glow);
+  background: rgba(0, 242, 254, 0.08);
+  text-shadow: 0 0 8px rgba(0, 242, 254, 0.6);
+}
+
+/* Global Content Layout */
+section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  border-color: rgba(0, 242, 254, 0.15);
+}
+
+section h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--primary-glow);
+  padding-left: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* Home Section Layout */
+#home p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+#home p strong, #home p:not(:first-of-type) {
+  color: var(--secondary-glow);
+}
+
+/* Tables Custom Styling (Activities & Schedule) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+}
+
+th {
+  background: linear-gradient(90deg, rgba(127, 0, 255, 0.2), rgba(0, 242, 254, 0.1));
+  color: var(--primary-glow);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.95rem;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+  color: #fff;
+}
+
+/* Modern Registration Form Controls */
+form {
+  max-width: 500px;
+  margin-top: 1rem;
+}
+
+label {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background: rgba(8, 11, 17, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-glow);
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+}
+
+select option {
+  background: #0d131f;
+  color: var(--text-main);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--accent-purple), var(--secondary-glow));
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(127, 0, 255, 0.3);
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 242, 254, 0.4);
+  filter: brightness(1.1);
+}
+
+#message {
+  margin-top: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-glow);
+}
+
+/* Contact Details Info styling */
+#contact p {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(5, 7, 12, 0.8);
+}
+
+footer p:first-child {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: 2px;
+  margin-bottom: 0.3rem;
+}
+
+footer p:last-child {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Responsive View Adjustments */
+@media (max-width: 768px) {
+  section {
+    margin: 1.5rem 1rem;
+    padding: 1.5rem;
+  }
+  
+  header h1 {
+    font-size: 2.3rem;
+  }
+  
+  nav {
+    gap: 0.5rem;
+    padding: 0.8rem;
+  }
+  
+  nav a {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
+  
+  th, td {
+    padding: 0.8rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}

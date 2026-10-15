@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeConflux</title>
+    <link rel="stylesheet" href="wb.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Code Conflux</h1>
+        <p>Unleashing the Power of Programming</p>
+
+        <div id="clock"></div>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#activities">Activities</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Registration</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <section id="home">
+        <h2>Welcome to CodeConflux</h2>
+
+        <p>
+            CodeConflux is a student technology event where participants
+            can take part in technical activities and coding competitions.
+        </p>
+
+        <p>
+            Date: 1st December 2026
+        </p>
+        <p>
+            Time: 10:00 AM onwards
+        </p>
+        <p>
+            Fees: Rs.150 per Event
+        </p>
+        <p>
+            Venue: IEM CIIE Auditorium
+        </p>
+    </section>
+
+
+    <section id="activities">
+
+        <h2>Activities</h2>
+
+        <table>
+            <tr>
+                <th>Activity</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td>CodeChef Starters</td>
+                <td>Basic programming problems</td>
+            </tr>
+
+            <tr>
+                <td>Quantum Quandary</td>
+                <td>Questions related to Quantum Mechanics</td>
+            </tr>
+
+            <tr>
+                <td>Vitality Vision</td>
+                <td>Students present their innovative projects</td>
+            </tr>
+
+            <tr>
+                <td>Debug Challenge</td>
+                <td>Find and correct programming errors</td>
+            </tr>
+        </table>
+
+    </section>
+
+
+    <section id="schedule">
+
+        <h2>Event Schedule</h2>
+
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Program</th>
+            </tr>
+
+            <tr>
+                <td>10:00 AM</td>
+                <td>Registration</td>
+            </tr>
+
+            <tr>
+                <td>10:30 AM</td>
+                <td>Inauguration Ceremony</td>
+            </tr>
+
+            <tr>
+                <td>11:00 AM</td>
+                <td>Quantum Quandary</td>
+            </tr>
+
+            <tr>
+                <td>1:00 PM</td>
+                <td>Lunch Break</td>
+            </tr>
+
+            <tr>
+                <td>3:00 PM</td>
+                <td>CodeChef Starters</td>
+            </tr>
+
+            <tr>
+                <td>4:00 PM</td>
+                <td>Vitality Vision</td>
+            </tr>
+
+            <tr>
+                <td>6:00 PM</td>
+                <td>Result Announcement</td>
+            </tr>
+        </table>
+
+    </section>
+
+
+    <section id="register">
+
+        <h2>Registration Form</h2>
+
+        <form onsubmit="return checkForm()">
+
+            <label>Name:</label>
+            <br>
+            <input type="text" id="studentName">
+
+            <br><br>
+
+            <label>Email:</label>
+            <br>
+            <input type="text" id="studentEmail">
+
+            <br><br>
+
+            <label>Department:</label>
+            <br>
+
+            <select id="department">
+                <option value="">Select Department</option>
+                <option>CSE</option>
+                <option>CSE AIML</option>
+                <option>ECE</option>
+                <option>EE</option>
+                <option>ME</option>
+            </select>
+
+            <br><br>
+
+            <label>Select Activity:</label>
+            <br>
+
+            <select id="activity">
+                <option value="">Select Activity</option>
+                <option>CodeChef Starters</option>
+                <option>Quantum Quandary</option>
+                <option>Vitality Vision</option>
+                <option>Debug Challenge</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>Email: codeconflux@example.com</p>
+
+        <p>Phone: 7908335722</p>
+
+        <p>Venue: IEM CIIE Auditorium</p>
+
+    </section>
+
+
+    <footer>
+        <p>CODECONFLUX 2026</p>
+        <p>Student Technology Event</p>
+    </footer>
+
+
+    <script src="web.js"></script>
+
+</body>
+</html>
